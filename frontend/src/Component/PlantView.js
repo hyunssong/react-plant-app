@@ -43,6 +43,9 @@ function PlantView(props) {
         if (type == row && thisCol == col){
             return "selected";
         }
+        else{
+            return "header-list";
+        }
     }
 
     return (
@@ -62,7 +65,7 @@ function PlantView(props) {
                                             
                                             <TreeView key={plant_type+structure.name} nodeLabel={label2} >
                                                 <div className="header-list">
-                                                    <span key="color" className={checkSelected(plant_type,structure,"color")} onClick={handleClick(plant_type,structure,"color")}>{structure.color && <p>color:</p> && structure.color}</span>
+                                                     <span key="color" className={checkSelected(plant_type,structure,"color")} onClick={handleClick(plant_type,structure,"color")}>{structure.color && <p>color:</p> && structure.color}</span>
                                                     <br/>
                                                     <span key="shape" className={checkSelected(plant_type, structure,"shape")} onClick={handleClick(plant_type, structure,"shape")}> {structure.shape && <p>shape:</p> && structure.shape}</span>
                                                 </div>

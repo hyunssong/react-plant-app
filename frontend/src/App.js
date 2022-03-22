@@ -30,7 +30,7 @@ function App() {
 
   //fetch data from Spring backend
   const fetchData = useCallback (async() =>{
-    let response = await axios.get(API);
+    let response = await axios.get(/api/v1/list);
     setData(response.data);
   },[])
   
@@ -47,6 +47,7 @@ function App() {
 
   return (
     <div className="App">
+      <br/>
       <div>
         <Table  row = {row} col = {col} data={data}/>
       </div>
