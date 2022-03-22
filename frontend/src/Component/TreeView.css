@@ -1,0 +1,20 @@
+
+.header-list {
+  margin-left: 60px;
+}
+
+table{
+  border:1px solid black;
+  border-collapse:collapse;
+}
+
+th,td{
+
+  border-style: solid;
+  border-width:1px;
+}
+.selected{
+  background: lightgoldenrodyellow;
+  user-select: none;
+}
+
